@@ -1,6 +1,11 @@
 pipeline {
     agent any 
+    
+    tools {
+    nodejs 'NodeJS'  // Ensure 'NodeJS' matches the name in Global Tool Configuration
+    }
     stages {
+        
         stage('Build') { 
             steps {
                sh 'echo "this is the build"'
