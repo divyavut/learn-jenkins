@@ -15,3 +15,4 @@
 4. POST section
 5. Parameters
 6. triggers
+7. input
