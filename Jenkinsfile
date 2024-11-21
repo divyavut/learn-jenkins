@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent 'AGENT-1' 
     
     tools {
     nodejs 'NodeJS'  // Ensure 'NodeJS' matches the name in Global Tool Configuration
