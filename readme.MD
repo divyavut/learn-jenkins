@@ -10,3 +10,8 @@
 
 #####
 1. JENKINS_HOME:  /var/lib/jenkins
+2. agent
+3. options
+4. POST section
+5. Parameters
+6. triggers
