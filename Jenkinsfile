@@ -4,7 +4,7 @@ pipeline {
     }
     options { timeout(time: 10, unit: 'SECONDS')
     disableConcurrentBuilds()
-    retry(3)
+    // retry(3)
      }
      parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
@@ -59,7 +59,7 @@ pipeline {
             echo "This section runs when pipeline success"
         }
         failure{
-            echo "This section run ehn pipeline failure"
+            echo "This section run when pipeline failure"
         }
     }
 }
