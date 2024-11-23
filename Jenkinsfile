@@ -36,6 +36,13 @@ pipeline {
                 // error 'error piepline'
             }
         }
+       
+        stage('List Env Variables') {
+            steps {
+                sh 'printenv'
+            }
+        }
+    
         stage('Print Params') { 
             steps {
                 echo "Hello ${params.PERSON}"
